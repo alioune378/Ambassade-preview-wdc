@@ -1,6 +1,8 @@
 # Netlify configuration for the PRIVATE preview.
+# The site is prebuilt into dist/ (run `npm run build` and commit dist/ after
+# any change), so Netlify only publishes files: no package install at deploy.
 [build]
-  command = "npm install --omit=dev --no-audit --no-fund && npm run build"
+  command = "echo 'Publishing prebuilt dist/'"
   publish = "dist"
 
 [build.environment]
