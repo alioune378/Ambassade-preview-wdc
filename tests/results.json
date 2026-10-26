@@ -1,0 +1,189 @@
+{
+  "ranAt": "2026-10-26T22:32:45.468Z",
+  "failures": 0,
+  "results": [
+    {
+      "name": "Internal links: crawl every page reachable from home",
+      "status": "pass",
+      "detail": "38 pages crawled, 0 broken",
+      "ms": 5554
+    },
+    {
+      "name": "Unknown route shows not-found page",
+      "status": "pass",
+      "detail": "",
+      "ms": 117
+    },
+    {
+      "name": "Every page has a unique, descriptive title",
+      "status": "pass",
+      "detail": "23 unique titles",
+      "ms": 3270
+    },
+    {
+      "name": "Search console: suggestions, keyboard, results page",
+      "status": "pass",
+      "detail": "5 suggestions for \"passeport\"; Enter opens the active one",
+      "ms": 763
+    },
+    {
+      "name": "Header search: Ctrl+K overlay, focus trap, Escape",
+      "status": "pass",
+      "detail": "",
+      "ms": 321
+    },
+    {
+      "name": "Service directory: search, theme filters, shareable URL",
+      "status": "pass",
+      "detail": "15 services; passeport → 3; état civil → 4",
+      "ms": 261
+    },
+    {
+      "name": "Service template: 13 sections, page index with status dots, help block",
+      "status": "pass",
+      "detail": "13 sections",
+      "ms": 397
+    },
+    {
+      "name": "Checklist: tick, print, PDF and text downloads",
+      "status": "pass",
+      "detail": "PDF 1715 bytes (checklist-passeport-premiere-demande-et-renouvellement.pdf)",
+      "ms": 340
+    },
+    {
+      "name": "Service finder: two-step guided path",
+      "status": "pass",
+      "detail": "",
+      "ms": 623
+    },
+    {
+      "name": "FAQ: search, keyboard accordion, deep link",
+      "status": "pass",
+      "detail": "1 result(s) for \"métro\"",
+      "ms": 930
+    },
+    {
+      "name": "Language: EN translates, WO notice, choice persists, same page kept",
+      "status": "pass",
+      "detail": "",
+      "ms": 405
+    },
+    {
+      "name": "Institution pages: jurisdiction, biography, former ambassadors",
+      "status": "pass",
+      "detail": "13 countries + 2 institutions; 13 former ambassadors",
+      "ms": 414
+    },
+    {
+      "name": "News: filters, archive, article page, related items",
+      "status": "pass",
+      "detail": "5 items; diplomatie → 2",
+      "ms": 497
+    },
+    {
+      "name": "Today panel: open/closed from Washington time (frozen clock)",
+      "status": "pass",
+      "detail": "Wed 11:00 open · Sat closed · Wed 17:00 closed · consular days unconfirmed",
+      "ms": 606
+    },
+    {
+      "name": "Contact form: validation, sensitive-data guard, simulated send",
+      "status": "pass",
+      "detail": "",
+      "ms": 385
+    },
+    {
+      "name": "Assistance: validation, DEMO-WDC reference, five-stage tracker",
+      "status": "pass",
+      "detail": "ref DEMO-WDC-2026-0001; 5 stages; unknown ref → error",
+      "ms": 3399
+    },
+    {
+      "name": "Operations console: filters, search, detail, actions",
+      "status": "pass",
+      "detail": "13 requests; high → 2; open → 9",
+      "ms": 398
+    },
+    {
+      "name": "Content-management demo: draft → review → published, logged",
+      "status": "pass",
+      "detail": "",
+      "ms": 369
+    },
+    {
+      "name": "Platform reuse: fictional mission via ?mission=",
+      "status": "pass",
+      "detail": "fictional banner, own name and own theme",
+      "ms": 309
+    },
+    {
+      "name": "Demo disclaimer and noindex on every page",
+      "status": "pass",
+      "detail": "23 pages",
+      "ms": 3665
+    },
+    {
+      "name": "External links: HTTPS and rel=\"noopener noreferrer\"",
+      "status": "pass",
+      "detail": "7 external links",
+      "ms": 3516
+    },
+    {
+      "name": "Accessibility rules on every page",
+      "status": "pass",
+      "detail": "23 pages, 0 issues",
+      "ms": 3903
+    },
+    {
+      "name": "Contrast measured on rendered text (WCAG AA)",
+      "status": "pass",
+      "detail": "2032 text elements on 23 pages, all ≥ AA",
+      "ms": 3791
+    },
+    {
+      "name": "Keyboard: skip link first, focus moves to main",
+      "status": "pass",
+      "detail": "",
+      "ms": 190
+    },
+    {
+      "name": "No horizontal overflow at 375 / 390 / 768 / 1024 / 1440 px",
+      "status": "pass",
+      "detail": "23 pages × 5 widths",
+      "ms": 20312
+    },
+    {
+      "name": "Mobile menu (390 px): open, language inside, navigate, Escape",
+      "status": "pass",
+      "detail": "",
+      "ms": 382
+    },
+    {
+      "name": "Performance budget: weight, LCP, CLS on home (desktop + mobile)",
+      "status": "pass",
+      "detail": "1440px: 700 kB, LCP 228 ms, CLS 0 · 390px: 744 kB, LCP 216 ms, CLS 0",
+      "ms": 2564
+    },
+    {
+      "name": "Screenshots captured",
+      "status": "pass",
+      "detail": "18 screenshots",
+      "ms": 8564
+    },
+    {
+      "name": "No JavaScript errors in console",
+      "status": "pass",
+      "detail": "",
+      "ms": 0
+    }
+  ],
+  "externalLinks": [
+    "https://diplomatie.gouv.sn/",
+    "https://www.ambasenegal-us.org/",
+    "https://www.ambasenegal-us.org/demande-de-visa/",
+    "https://www.ambasenegal-us.org/passeport/",
+    "https://www.ambasenegal-us.org/wp-content/uploads/2025/03/Visa_form.pdf",
+    "https://www.google.com/maps/dir/?api=1&destination=2215%20M%20St%20NW%2C%20Washington%2C%20DC%2020037",
+    "https://www.openstreetmap.org/search?query=2215%20M%20St%20NW%2C%20Washington%2C%20DC%2020037"
+  ]
+}

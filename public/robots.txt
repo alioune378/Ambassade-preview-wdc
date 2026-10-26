@@ -1,0 +1,4 @@
+# Private demonstration. This is not access control: the preview is protected
+# by the edge function in netlify/edge-functions/preview-auth.ts.
+User-agent: *
+Disallow: /

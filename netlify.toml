@@ -1,0 +1,35 @@
+# Netlify configuration for the PRIVATE preview.
+[build]
+  command = "npm install --no-audit --no-fund && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  MISSION = "washington"
+  PREVIEW = "true"
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1"
+
+# Real access control: every request goes through HTTP Basic Auth in an edge
+# function. Set PREVIEW_USER and PREVIEW_PASSWORD in Site settings >
+# Environment variables. Without them the function refuses all traffic.
+[[edge_functions]]
+  path = "/*"
+  function = "preview-auth"
+
+# SPA fallback so clean URLs like /demarches/sauf-conduit load the app.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+    Strict-Transport-Security = "max-age=31536000"
+    Cache-Control = "private, no-store"

@@ -1,0 +1,30 @@
+{
+  "name": "senegal-consulaire-digital",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Dalal Studio — unofficial demonstration platform, Washington mission (Ambassade du Sénégal aux États-Unis)",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:alpha": "MISSION=demo-alpha node scripts/build.mjs",
+    "build:beta": "MISSION=demo-beta node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs 4173",
+    "typecheck": "tsc --noEmit",
+    "test": "node tests/run-tests.mjs",
+    "test:auth": "node --experimental-strip-types tests/auth.test.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "esbuild": "^0.28.0",
+    "playwright": "^1.63.0",
+    "typescript": "^6.0.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
