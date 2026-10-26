@@ -1,6 +1,6 @@
 // Netlify Edge Function: protects the whole preview with HTTP Basic Auth.
 // Configure PREVIEW_USER and PREVIEW_PASSWORD in Netlify environment variables.
-import { checkAuth } from '../lib/auth-core.ts';
+import { checkAuth } from './auth-core.ts';
 
 declare const Netlify: { env: { get(name: string): string | undefined } };
 

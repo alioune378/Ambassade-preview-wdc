@@ -1,3 +1,5 @@
+> **Current setting (26 Oct 2026): no password.** At Dalal Studio's request the password gate is switched off. The demo is open to anyone with the link and stays out of search engines (`noindex` header, `robots.txt`). The gate's code is kept in `netlify/lib/` and can be switched back on by moving `preview-auth.ts` into `netlify/edge-functions/` (fix its import to `../lib/auth-core.ts`) and adding an `[[edge_functions]]` block for `/*` in `netlify.toml`.
+
 # Private preview deployment (Netlify)
 
 The preview must be visible only to Dalal Studio and the officials it is shown to. A hidden URL is not enough, and `robots.txt` / `noindex` are not security. Access control here is an HTTP Basic Auth check that runs on Netlify's edge **before** any file is served.
