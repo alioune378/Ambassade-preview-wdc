@@ -16,4 +16,9 @@ t('rejects a wrong user', () => assert.equal(checkAuth(basic('other', 'S3cret-pr
 t('accepts correct credentials', () => assert.deepEqual(checkAuth(basic('dalal', 'S3cret-preview'), cfg), { ok: true }));
 t('accepts passwords containing colons', () => assert.ok(checkAuth(basic('u', 'a:b:c'), { user: 'u', password: 'a:b:c' }).ok));
 t('safeEqual compares length and content', () => { assert.ok(safeEqual('abc', 'abc')); assert.ok(!safeEqual('abc', 'abd')); assert.ok(!safeEqual('abc', 'abcd')); });
+const utf8 = (u, p) => `Basic ${Buffer.from(`${u}:${p}`, 'utf8').toString('base64')}`;
+t('accepts accented (UTF-8) passwords', () => assert.ok(checkAuth(utf8('u', 'Téranga-2026'), { user: 'u', password: 'Téranga-2026' }).ok));
+t('username is case-insensitive (phone auto-capitalisation)', () => assert.ok(checkAuth(basic('Dalal', 'S3cret-preview'), cfg).ok));
+t('password stays case-sensitive', () => assert.equal(checkAuth(basic('dalal', 's3cret-preview'), cfg).status, 401));
+t('ignores stray spaces in configured values', () => assert.ok(checkAuth(basic('dalal', 'S3cret-preview'), { user: ' dalal ', password: 'S3cret-preview\n' }).ok));
 console.log(`\n${n}/${n} auth checks passed`);

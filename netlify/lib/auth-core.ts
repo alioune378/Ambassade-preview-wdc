@@ -18,19 +18,27 @@ export function safeEqual(a: string, b: string): boolean {
 }
 
 export function checkAuth(header: string | null, cfg: AuthConfig): AuthResult {
-  if (!cfg.user || !cfg.password) return { ok: false, status: 503, reason: 'not-configured' };
+  // Trim configured values: a space or line break pasted into the Netlify
+  // dashboard would otherwise make the right password fail.
+  const cfgUser = (cfg.user ?? '').trim();
+  const cfgPass = (cfg.password ?? '').trim();
+  if (!cfgUser || !cfgPass) return { ok: false, status: 503, reason: 'not-configured' };
   if (!header || !header.startsWith('Basic ')) return { ok: false, status: 401, reason: 'missing' };
   let decoded = '';
   try {
-    decoded = atob(header.slice(6).trim());
+    // Browsers send UTF-8 bytes (accents, "é"): decode them as UTF-8.
+    const bin = atob(header.slice(6).trim());
+    decoded = new TextDecoder().decode(Uint8Array.from(bin, (c) => c.charCodeAt(0)));
   } catch {
     return { ok: false, status: 401, reason: 'malformed' };
   }
   const idx = decoded.indexOf(':');
   if (idx < 0) return { ok: false, status: 401, reason: 'malformed' };
-  const user = decoded.slice(0, idx);
-  const pass = decoded.slice(idx + 1);
-  const okUser = safeEqual(user, cfg.user);
-  const okPass = safeEqual(pass, cfg.password);
+  // Username is case-insensitive (phones capitalise the first letter);
+  // the password stays exact, apart from surrounding spaces.
+  const user = decoded.slice(0, idx).trim().toLowerCase();
+  const pass = decoded.slice(idx + 1).trim();
+  const okUser = safeEqual(user, cfgUser.toLowerCase());
+  const okPass = safeEqual(pass, cfgPass);
   return okUser && okPass ? { ok: true } : { ok: false, status: 401, reason: 'invalid' };
 }
