@@ -14,13 +14,13 @@
     "test:auth": "node --experimental-strip-types tests/auth.test.mjs"
   },
   "dependencies": {
+    "esbuild": "^0.28.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
-    "esbuild": "^0.28.0",
     "playwright": "^1.63.0",
     "typescript": "^6.0.3"
   },

@@ -1,6 +1,6 @@
 # Netlify configuration for the PRIVATE preview.
 [build]
-  command = "npm install --no-audit --no-fund && npm run build"
+  command = "npm install --omit=dev --no-audit --no-fund && npm run build"
   publish = "dist"
 
 [build.environment]
