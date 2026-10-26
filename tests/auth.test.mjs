@@ -1,6 +1,6 @@
 // Unit tests for the preview access gate. Run: npm run test:auth
 import assert from 'node:assert/strict';
-import { checkAuth, safeEqual } from '../netlify/edge-functions/auth-core.ts';
+import { checkAuth, safeEqual } from '../netlify/lib/auth-core.ts';
 
 const cfg = { user: 'dalal', password: 'S3cret-preview' };
 const basic = (u, p) => `Basic ${btoa(`${u}:${p}`)}`;

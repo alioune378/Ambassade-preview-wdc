@@ -10,6 +10,7 @@
   MISSION = "washington"
   PREVIEW = "true"
   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1"
+  NPM_FLAGS = "--omit=dev --no-audit --no-fund"
 
 # Real access control: every request goes through HTTP Basic Auth in an edge
 # function. Set PREVIEW_USER and PREVIEW_PASSWORD in Site settings >
