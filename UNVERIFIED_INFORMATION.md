@@ -13,6 +13,7 @@ The site says "Informations à confirmer auprès de l'Ambassade." wherever one o
 | Ambassador's name, title and biography text | Matches the live biography page, paraphrased |
 | Former ambassadors list, especially the 2019–2025 entry | Names match the live page; years only in images (read from screenshots); one entry flagged |
 | Jurisdiction (13 countries + IMF/World Bank), and the split of US states with the New York consulate | Countries match the live page; the split is not stated anywhere |
+| Ambassador's portrait | ✅ Supplied by Dalal Studio for this demonstration (26 Oct 2026); shown on the home page, the Embassy page and the Ambassador's page |
 | Event photos | ✅ Use approved for this demonstration (26 Oct 2026); credited "Photo publiée par l'Ambassade · usage autorisé pour cette démonstration". Confirm again before any public launch |
 
 ## Per service

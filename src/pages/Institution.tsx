@@ -3,6 +3,7 @@ import { useI18n } from '../platform/i18n';
 import { Link } from '../platform/router';
 import { Icon } from '../components/Icon';
 import { Arch } from '../components/Today';
+import { Portrait } from '../components/blocks';
 import { ExternalLink, PageHeader, ToConfirm, useSeo, VerifyBadge } from '../components/ui';
 import { NotFound } from './Misc';
 
@@ -41,7 +42,7 @@ export function Institution() {
       {message && (
         <section className="section section--surface" aria-labelledby="hm-h">
           <div className="container envoy">
-            <div className="envoy__frame">{t.portrait_placeholder}</div>
+            <Portrait />
             <div>
               <p className="kicker">{l(mission.headOfMission.title)}</p>
               <h2 id="hm-h">{mission.headOfMission.name.value ?? t.to_confirm}</h2>
@@ -88,8 +89,8 @@ export function Ambassador() {
     <>
       <PageHeader eyebrow={l(mission.headOfMission.title)} title={name ?? t.to_confirm} crumbs={[{ label: inst, to: '/l-ambassade' }, { label: t.c_head_page }]} />
       <div className="container section">
-        <div className="envoy" style={{ alignItems: 'start' }}>
-          <div className="envoy__frame">{t.portrait_placeholder}</div>
+        <div className="envoy envoy--page" style={{ alignItems: 'start' }}>
+          <Portrait eager />
           <div className="prose">
             {msg && (
               <section aria-labelledby="msg-h">

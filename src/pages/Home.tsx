@@ -1,7 +1,7 @@
 import { content, mission } from '../platform/mission';
 import { useI18n } from '../platform/i18n';
 import { Link } from '../platform/router';
-import { IndexItem, LeadStory, StoryList } from '../components/blocks';
+import { IndexItem, LeadStory, Portrait, StoryList } from '../components/blocks';
 import { Icon } from '../components/Icon';
 import { SearchConsole } from '../components/Search';
 import { TodayPanel } from '../components/Today';
@@ -140,7 +140,7 @@ export function Home() {
       {msg && (
         <section className="section" aria-labelledby="env-h">
           <div className="container envoy">
-            <div className="envoy__frame">{t.portrait_placeholder}</div>
+            <Portrait />
             <div>
               <p className="kicker">{l(msg.title)}</p>
               <h2 id="env-h" className="sr-only">{l(msg.title)}</h2>

@@ -197,14 +197,14 @@ hr { border: 0; border-top: 1px solid var(--hair); margin: 24px 0; }
 .page-head__meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
 
 /* ─── Sections ────────────────────────────────────────────────────── */
-.section { padding: 80px 0; }
+.section { padding-block: 80px; }
 .section--tight { padding: 48px 0; }
 .section--surface { background: var(--surface); border-top: 1px solid var(--hair); border-bottom: 1px solid var(--hair); }
 .section-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px 48px; align-items: end; margin-bottom: 36px; }
 .section-head h2 { margin: 0; }
 .section-head p { margin: 0; color: var(--muted); max-width: 46ch; }
 .section-head--split { display: flex; justify-content: space-between; align-items: end; }
-@media (max-width: 860px) { .section { padding: 56px 0; } .section-head { grid-template-columns: minmax(0, 1fr); gap: 10px; margin-bottom: 24px; } .section-head--split { flex-direction: column; align-items: flex-start; gap: 12px; } }
+@media (max-width: 860px) { .section { padding-block: 56px; } .section-head { grid-template-columns: minmax(0, 1fr); gap: 10px; margin-bottom: 24px; } .section-head--split { flex-direction: column; align-items: flex-start; gap: 12px; } }
 
 /* ─── Home hero ───────────────────────────────────────────────────── */
 .hero { background: var(--surface); border-bottom: 1px solid var(--hair); }
@@ -652,3 +652,10 @@ hr { border: 0; border-top: 1px solid var(--hair); margin: 24px 0; }
 .photo-grid img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 2px; display: block; }
 .photo-grid figure { margin: 0; }
 .ops__filters label select { width: 150px; }
+
+.envoy__frame--photo { padding: 0; margin: 0; overflow: hidden; background: #fff; box-shadow: 0 0 0 1px var(--hair), 0 18px 40px -24px rgba(15, 27, 45, .45); }
+.envoy__frame--photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; }
+@media (max-width: 760px) { .envoy__frame--photo { padding: 0; } }
+@media (max-width: 760px) { .envoy--page { grid-template-columns: minmax(0, 1fr); } .envoy--page .envoy__frame { width: 190px; } }
+/* Every container keeps its side gutter, even when combined with a class that sets padding. */
+.container.container { padding-inline: var(--gutter); }

@@ -107,7 +107,7 @@ export interface MissionConfig {
   /** Countries covered, for the jurisdiction display. */
   jurisdictionCountries?: Verified<Localized[]>;
   appointment: Verified<{ url: string; label: Localized }>;
-  headOfMission: { title: Localized; name: Verified<string> };
+  headOfMission: { title: Localized; name: Verified<string>; portrait?: { src: string; credit: Localized } };
   network: Post[];
   usefulLinks: { label: Localized; url?: string; verification: Verification }[];
   languages: { code: LangCode; label: string; status: 'complete' | 'partial' | 'planned' }[];

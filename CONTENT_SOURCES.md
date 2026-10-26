@@ -18,6 +18,7 @@ Every fact in `src/missions/washington/*.ts` is wrapped in `Verified<T>`, which 
 | `/passeport/`, `/cartes-consulaires/`, `/etat-civil/`, `/demande-de-visa/`, `/inscription/` | Eligibility, documents, fees, processing, how to apply, forms for: passport, consular card, consular registration, birth, marriage, death, visa, entry requirements | Paraphrased; amounts copied exactly |
 | Article text supplied by Dalal Studio (the President's UN General Assembly speech on the Paris Agreement) | News summary | Paraphrased; no long quotations |
 | Event photos supplied by Dalal Studio (UNGA podium, Tripoli group photo, IMF meeting) | News and diplomacy band | Published by the Embassy. **Use approved for this demonstration** (confirmed by Dalal Studio, 26 Oct 2026); credited on screen |
+| Official portrait of the Ambassador, supplied by Dalal Studio (26 Oct 2026) | Home page, Embassy page, Ambassador's page | Supplied for this demonstration |
 | https://diplomatie.gouv.sn/ | Footer link to the Ministry | Link only |
 
 ## Written by Dalal Studio (status `unverified`)

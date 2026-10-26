@@ -122,6 +122,10 @@ export const config: MissionConfig = {
   },
   headOfMission: {
     title: { fr: 'Ambassadeur', en: 'Ambassador' },
+    portrait: {
+      src: '/assets/ambassadeur.jpg',
+      credit: { fr: 'Portrait officiel fourni à Dalal Studio pour cette démonstration', en: 'Official portrait supplied to Dalal Studio for this demonstration' },
+    },
     name: {
       value: 'M. Abdoul Wahab Haïdara',
       ...fromScreens(

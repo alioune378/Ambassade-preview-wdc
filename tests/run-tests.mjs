@@ -430,7 +430,7 @@ await check('Keyboard: skip link first, focus moves to main', async () => {
 
 // ── Responsive ───────────────────────────────────────────────────────
 const widths = [375, 390, 768, 1024, 1440];
-await check('No horizontal overflow at 375 / 390 / 768 / 1024 / 1440 px', async () => {
+await check('No horizontal overflow and a side gutter at 375 / 390 / 768 / 1024 / 1440 px', async () => {
   const over = [];
   for (const w of widths) {
     await page.setViewportSize({ width: w, height: 900 });
@@ -438,6 +438,9 @@ await check('No horizontal overflow at 375 / 390 / 768 / 1024 / 1440 px', async 
       await go(r);
       const o = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
       if (o > 1) over.push(`${r}@${w}(+${o})`);
+      // Side gutter: no text block in main may touch the screen edge.
+      const edge = await page.evaluate(() => [...document.querySelectorAll('main h1, main h2, main p')].filter((e) => e.offsetParent && e.textContent.trim() && !e.closest('.sr-only')).some((e) => e.getBoundingClientRect().left < 8));
+      if (edge) over.push(`${r}@${w}(text touches edge)`);
     }
   }
   assert(!over.length, over.slice(0, 8).join(', '));

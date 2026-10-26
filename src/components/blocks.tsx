@@ -148,3 +148,16 @@ export function visitPrepItems(): { id: string; text: { fr: string; en: string }
     ...(addr ? [{ id: 'prep-addr', text: { fr: `Adresse : ${addr.lines.join(', ')}, ${addr.city} ${addr.postalCode}`, en: `Address: ${addr.lines.join(', ')}, ${addr.city} ${addr.postalCode}` } }] : []),
   ];
 }
+
+/** The head of mission's portrait in the arch frame, or a neutral placeholder. */
+export function Portrait({ eager = false }: { eager?: boolean }) {
+  const { l, t } = useI18n();
+  const p = mission.headOfMission.portrait;
+  const name = mission.headOfMission.name.value;
+  if (!p) return <div className="envoy__frame">{t.portrait_placeholder}</div>;
+  return (
+    <figure className="envoy__frame envoy__frame--photo" title={l(p.credit)}>
+      <img src={p.src} alt={name ? `${name}, ${l(mission.headOfMission.title)}` : l(mission.headOfMission.title)} width={600} height={766} loading={eager ? 'eager' : 'lazy'} decoding="async" />
+    </figure>
+  );
+}
