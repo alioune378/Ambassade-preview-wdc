@@ -4,7 +4,7 @@
  */
 
 export const frExtra = {
-  demo_short: 'Maquette non officielle — Dalal Studio',
+  demo_short: 'Maquette non officielle — Dalal Technologies',
   search_short: 'Rechercher',
   search_pages: 'Pages',
   search_count: (n: number) => (n === 0 ? 'Aucun résultat' : n === 1 ? '1 résultat' : `${n} résultats`),
@@ -127,7 +127,7 @@ export const frExtra = {
 };
 
 export const enExtra: typeof frExtra = {
-  demo_short: 'Unofficial mock-up — Dalal Studio',
+  demo_short: 'Unofficial mock-up — Dalal Technologies',
   search_short: 'Search',
   search_pages: 'Pages',
   search_count: (n: number) => (n === 0 ? 'No results' : n === 1 ? '1 result' : `${n} results`),

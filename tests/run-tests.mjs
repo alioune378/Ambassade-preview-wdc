@@ -206,7 +206,7 @@ await check('Institution pages: jurisdiction, biography, former ambassadors', as
   assert(h === 13, `expected 13 former ambassadors, got ${h}`);
   await go('/l-ambassade/ambassadeur');
   assert(await page.isVisible('text=Maldives'), 'biography missing');
-  assert(await page.isVisible('text=Résumé rédigé par Dalal Studio'), 'summary note missing');
+  assert(await page.isVisible('text=Résumé rédigé par Dalal Technologies'), 'summary note missing');
   return `13 countries + 2 institutions; ${h} former ambassadors`;
 });
 await check('News: filters, archive, article page, related items', async () => {
@@ -339,7 +339,7 @@ await check('Demo disclaimer and noindex on every page', async () => {
   for (const r of ROUTES) {
     await go(r);
     const strip = (await page.textContent('.demo-strip')) + (await page.textContent('.site-footer__legal'));
-    assert(strip.includes('Maquette de démonstration non officielle — Projet proposé par Dalal Studio. Aucun service administratif réel n’est fourni sur cette plateforme.'), `disclaimer missing on ${r}`);
+    assert(strip.includes('Maquette de démonstration non officielle — Projet proposé par Dalal Technologies. Aucun service administratif réel n’est fourni sur cette plateforme.'), `disclaimer missing on ${r}`);
     assert((await page.getAttribute('meta[name=robots]', 'content')).includes('noindex'), `noindex missing on ${r}`);
   }
   return `${ROUTES.length} pages`;

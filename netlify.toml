@@ -13,7 +13,7 @@
   NPM_FLAGS = "--omit=dev --no-audit --no-fund"
 
 # No password gate: the demo is open to anyone with the link (decision of
-# Dalal Studio, 26 Oct 2026). It stays out of search engines via noindex.
+# Dalal Technologies, 26 Oct 2026). It stays out of search engines via noindex.
 # To restore the gate: add an [[edge_functions]] block for "preview-auth".
 
 # SPA fallback so clean URLs like /demarches/sauf-conduit load the app.

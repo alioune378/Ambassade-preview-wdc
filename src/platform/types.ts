@@ -191,7 +191,7 @@ export interface NewsItem {
   category: string;
   title: Localized;
   summary: Localized;
-  /** Longer body for the article page (Dalal Studio's own summary). */
+  /** Longer body for the article page (Dalal Technologies's own summary). */
   body?: Localized[];
   imageOnly?: boolean;
   image?: { src: string; alt: Localized; credit: Localized; position?: string };

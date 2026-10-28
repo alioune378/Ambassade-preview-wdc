@@ -1,7 +1,7 @@
 # Audit — ambasenegal-us.org (Ambassade du Sénégal à Washington)
 
 **Date:** 26 October 2026.
-**Method:** review of screenshots supplied by Dalal Studio, then a check of the live pages on 26 October 2026:
+**Method:** review of screenshots supplied by Dalal Technologies, then a check of the live pages on 26 October 2026:
 
 - the homepage;
 - Juridiction, Biographie de l'Ambassadeur and Anciens ambassadeurs;

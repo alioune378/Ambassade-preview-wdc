@@ -2,7 +2,7 @@ import type { ChecklistItem, IconName, Localized, MissionContent, SampleRequest,
 import { fromPage, fromScreens, OFFICIAL } from './config';
 
 /**
- * Washington content pack. Written by Dalal Studio from the official site
+ * Washington content pack. Written by Dalal Technologies from the official site
  * (screenshots, then the live pages checked on 26 Oct 2026). Nothing from
  * Paris is reused. Facts are paraphrased from the Embassy's own pages and
  * marked source-reported; where a page is silent, the field stays empty and
@@ -14,8 +14,8 @@ const neutral = (fr: string, en: string): Verified<Localized> => ({
   value: { fr, en },
   status: 'unverified',
   note: {
-    fr: 'Description générale rédigée par Dalal Studio, à valider par l’Ambassade.',
-    en: 'General description written by Dalal Studio, to be validated by the Embassy.',
+    fr: 'Description générale rédigée par Dalal Technologies, à valider par l’Ambassade.',
+    en: 'General description written by Dalal Technologies, to be validated by the Embassy.',
   },
 });
 
@@ -268,7 +268,7 @@ export const content: MissionContent = {
     { label: { fr: 'Rendez-vous', en: 'Appointments' }, icon: 'calendar', to: '/rendez-vous' },
     { label: { fr: 'Assistance', en: 'Help' }, icon: 'chat', to: '/assistance' },
   ],
-  faqSource: fromScreens('Réponses rédigées par Dalal Studio à partir du site officiel (consulté le 26 octobre 2026).', 'Answers written by Dalal Studio from the official site (checked 26 October 2026).'),
+  faqSource: fromScreens('Réponses rédigées par Dalal Technologies à partir du site officiel (consulté le 26 octobre 2026).', 'Answers written by Dalal Technologies from the official site (checked 26 October 2026).'),
   faq: [
     {
       id: 'horaires-consulaires',
@@ -350,7 +350,7 @@ export const content: MissionContent = {
       body: [
         { fr: 'Le chef de l’État a rappelé que l’Afrique, qui représente moins de 4 % des émissions mondiales, subit durement sécheresses, inondations, érosion côtière et insécurité alimentaire.', en: 'The head of state noted that Africa, which accounts for less than 4% of global emissions, is hit hard by droughts, floods, coastal erosion and food insecurity.' },
         { fr: 'Il a plaidé pour des financements conséquents pour l’adaptation, un accès simplifié aux fonds climatiques et des transferts de technologie, et salué le fonds consacré aux pertes et dommages.', en: 'He called for substantial adaptation finance, simpler access to climate funds and technology transfers, and welcomed the loss and damage fund.' },
-        { fr: 'Pour lui, l’obstacle principal est la volonté politique de faire du multilatéralisme un instrument de solidarité. Résumé rédigé par Dalal Studio à partir de l’article publié par l’Ambassade.', en: 'In his view, the main obstacle is the political will to make multilateralism an instrument of solidarity. Summary written by Dalal Studio from the article published by the Embassy.' },
+        { fr: 'Pour lui, l’obstacle principal est la volonté politique de faire du multilatéralisme un instrument de solidarité. Résumé rédigé par Dalal Technologies à partir de l’article publié par l’Ambassade.', en: 'In his view, the main obstacle is the political will to make multilateralism an instrument of solidarity. Summary written by Dalal Technologies from the article published by the Embassy.' },
       ],
       source: OFFICIAL,
       verification: fromScreens('Article publié sur le site officiel (rubrique Diplomatie), transmis le 26 octobre 2026.'),
@@ -368,7 +368,7 @@ export const content: MissionContent = {
       },
       body: [
         { fr: 'La réunion portait sur la réforme du Conseil de sécurité des Nations unies, sujet sur lequel l’Union africaine défend une position commune. Le Sénégal y a réaffirmé son soutien à cette position.', en: 'The meeting dealt with reform of the UN Security Council, on which the African Union holds a common position. Senegal reaffirmed its support for that position.' },
-        { fr: 'Résumé rédigé par Dalal Studio à partir de l’article publié sur le site officiel.', en: 'Summary written by Dalal Studio from the article published on the official site.' },
+        { fr: 'Résumé rédigé par Dalal Technologies à partir de l’article publié sur le site officiel.', en: 'Summary written by Dalal Technologies from the article published on the official site.' },
       ],
       source: OFFICIAL,
       verification: fromScreens(),
@@ -460,7 +460,7 @@ export const content: MissionContent = {
       ],
       signedBy: 'M. Abdoul Wahab Haïdara',
       source: OFFICIAL,
-      verification: fromScreens('Résumé du message visible sur le site officiel (consulté le 26 octobre 2026), rédigé par Dalal Studio.', 'Summary of the message visible on the official site (checked 26 October 2026), written by Dalal Studio.'),
+      verification: fromScreens('Résumé du message visible sur le site officiel (consulté le 26 octobre 2026), rédigé par Dalal Technologies.', 'Summary of the message visible on the official site (checked 26 October 2026), written by Dalal Technologies.'),
     },
     sections: [
       {
@@ -469,7 +469,7 @@ export const content: MissionContent = {
         body: [
           { fr: 'L’Ambassade représente la République du Sénégal auprès des États-Unis d’Amérique. Elle conduit la relation diplomatique, accompagne la coopération économique, culturelle et éducative, et rend des services consulaires aux Sénégalais résidant dans sa juridiction.', en: 'The Embassy represents the Republic of Senegal to the United States of America. It conducts the diplomatic relationship, supports economic, cultural and educational cooperation, and provides consular services to Senegalese nationals living in its jurisdiction.' },
         ],
-        verification: { status: 'unverified', note: { fr: 'Présentation générale rédigée par Dalal Studio, à valider par l’Ambassade.', en: 'General presentation written by Dalal Studio, to be validated by the Embassy.' } },
+        verification: { status: 'unverified', note: { fr: 'Présentation générale rédigée par Dalal Technologies, à valider par l’Ambassade.', en: 'General presentation written by Dalal Technologies, to be validated by the Embassy.' } },
       },
       {
         id: 'juridiction',

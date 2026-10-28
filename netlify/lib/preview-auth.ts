@@ -24,10 +24,10 @@ export default async (request: Request, context: { next: () => Promise<Response>
     });
   }
 
-  return new Response('Accès réservé — démonstration privée Dalal Studio.', {
+  return new Response('Accès réservé — démonstration privée Dalal Technologies.', {
     status: 401,
     headers: {
-      'WWW-Authenticate': 'Basic realm="Dalal Studio private preview", charset="UTF-8"',
+      'WWW-Authenticate': 'Basic realm="Dalal Technologies private preview", charset="UTF-8"',
       'Content-Type': 'text/plain; charset=utf-8',
       'X-Robots-Tag': 'noindex',
       'Cache-Control': 'no-store',

@@ -65,10 +65,10 @@ export function fictionalMission(s: Spec): MissionPack {
       ],
       nav: s.kind === 'embassy' ? ['home', 'services', 'appointments', 'embassy', 'news', 'contact'] : ['home', 'services', 'appointments', 'consulate', 'news', 'contact'],
       refPrefix: s.refPrefix,
-      agency: 'Dalal Studio',
+      agency: 'Dalal Technologies',
       demoLabel: {
-        fr: 'Mission fictive — démonstration de la réutilisation de la plateforme par Dalal Studio. Aucune donnée réelle.',
-        en: 'Fictional mission — demonstration of platform reuse by Dalal Studio. No real data.',
+        fr: 'Mission fictive — démonstration de la réutilisation de la plateforme par Dalal Technologies. Aucune donnée réelle.',
+        en: 'Fictional mission — demonstration of platform reuse by Dalal Technologies. No real data.',
       },
       theme: s.theme,
       strings: {

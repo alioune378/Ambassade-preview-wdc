@@ -1,8 +1,8 @@
 # Sénégal Consulaire Digital — Washington (démonstration)
 
-> **Maquette de démonstration non officielle — Projet proposé par Dalal Studio. Aucun service administratif réel n'est fourni sur cette plateforme.**
+> **Maquette de démonstration non officielle — Projet proposé par Dalal Technologies. Aucun service administratif réel n'est fourni sur cette plateforme.**
 
-This is a private, unofficial demonstration of a redesigned website for the Embassy of Senegal in Washington, D.C., built by Dalal Studio. It is not an authorized government service, and nothing here implies a contract, partnership, endorsement or authorization from the Embassy or the Government of Senegal.
+This is a private, unofficial demonstration of a redesigned website for the Embassy of Senegal in Washington, D.C., built by Dalal Technologies. It is not an authorized government service, and nothing here implies a contract, partnership, endorsement or authorization from the Embassy or the Government of Senegal.
 
 It is the second mission on the same platform as the Paris prototype. The Paris build is kept separate and unchanged.
 

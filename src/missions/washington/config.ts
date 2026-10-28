@@ -5,7 +5,7 @@ export const CHECKED = '2026-10-26';
 
 /**
  * Facts below come from the official site: first from screenshots supplied to
- * Dalal Studio, then checked against the live pages on 26 Oct 2026. They are
+ * Dalal Technologies, then checked against the live pages on 26 Oct 2026. They are
  * "source-reported": shown, labelled, to be reconfirmed by the Embassy.
  */
 export const fromScreens = (noteFr?: string, noteEn?: string): Verification => ({
@@ -124,7 +124,7 @@ export const config: MissionConfig = {
     title: { fr: 'Ambassadeur', en: 'Ambassador' },
     portrait: {
       src: '/assets/ambassadeur.jpg',
-      credit: { fr: 'Portrait officiel fourni à Dalal Studio pour cette démonstration', en: 'Official portrait supplied to Dalal Studio for this demonstration' },
+      credit: { fr: 'Portrait officiel fourni à Dalal Technologies pour cette démonstration', en: 'Official portrait supplied to Dalal Technologies for this demonstration' },
     },
     name: {
       value: 'M. Abdoul Wahab Haïdara',
@@ -175,10 +175,10 @@ export const config: MissionConfig = {
   ],
   nav: ['home', 'services', 'appointments', 'embassy', 'bilateral', 'news', 'contact'],
   refPrefix: 'DEMO-WDC',
-  agency: 'Dalal Studio',
+  agency: 'Dalal Technologies',
   demoLabel: {
-    fr: 'Maquette de démonstration non officielle — Projet proposé par Dalal Studio. Aucun service administratif réel n’est fourni sur cette plateforme.',
-    en: 'Unofficial demonstration mock-up — Project proposed by Dalal Studio. No real administrative service is provided on this platform.',
+    fr: 'Maquette de démonstration non officielle — Projet proposé par Dalal Technologies. Aucun service administratif réel n’est fourni sur cette plateforme.',
+    en: 'Unofficial demonstration mock-up — Project proposed by Dalal Technologies. No real administrative service is provided on this platform.',
   },
   // Approved direction: Diplomatic Modernism (midnight, ivory, stone, restrained gold),
   // Senegal green as the accent, red only for genuine alerts.
@@ -198,7 +198,7 @@ export const config: MissionConfig = {
       to_confirm: 'Informations à confirmer auprès de l’Ambassade.',
       to_confirm_text: 'Cette information n’a pas pu être vérifiée lors de l’audit. L’Ambassade doit la fournir avant toute mise en ligne.',
       book_text: 'Aucun portail de rendez-vous n’a pu être vérifié. Préparez vos documents, puis contactez l’Ambassade pour connaître la procédure.',
-      f_about: 'Démonstration réalisée par Dalal Studio. Ce site n’est pas le site officiel de l’Ambassade, ne fournit aucun service et ne résulte d’aucun contrat ni d’aucune autorisation.',
+      f_about: 'Démonstration réalisée par Dalal Technologies. Ce site n’est pas le site officiel de l’Ambassade, ne fournit aucun service et ne résulte d’aucun contrat ni d’aucune autorisation.',
       contact_route: 'Contactez l’Ambassade par téléphone ou e-mail pour connaître la procédure de rendez-vous.',
       rdv_no_portal: 'Aucun portail de rendez-vous en ligne n’a pu être vérifié. La procédure de réservation doit être confirmée par l’Ambassade ; en attendant, utilisez les coordonnées ci-dessous.',
     },
@@ -209,7 +209,7 @@ export const config: MissionConfig = {
       to_confirm: 'Information to be confirmed with the Embassy.',
       to_confirm_text: 'This information could not be verified during the audit. The Embassy must supply it before launch.',
       book_text: 'No appointment portal could be verified. Prepare your documents, then contact the Embassy to find out the procedure.',
-      f_about: 'Demonstration by Dalal Studio. This is not the Embassy’s official website, provides no services, and results from no contract or authorization.',
+      f_about: 'Demonstration by Dalal Technologies. This is not the Embassy’s official website, provides no services, and results from no contract or authorization.',
       contact_route: 'Contact the Embassy by phone or email to find out how to book.',
       rdv_no_portal: 'No online appointment portal could be verified. The booking procedure must be confirmed by the Embassy; meanwhile, use the contact details below.',
     },

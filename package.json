@@ -2,7 +2,7 @@
   "name": "senegal-consulaire-digital",
   "version": "0.2.0",
   "private": true,
-  "description": "Dalal Studio — unofficial demonstration platform, Washington mission (Ambassade du Sénégal aux États-Unis)",
+  "description": "Dalal Technologies — unofficial demonstration platform, Washington mission (Ambassade du Sénégal aux États-Unis)",
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",

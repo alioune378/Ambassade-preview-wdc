@@ -6,29 +6,29 @@ Every fact in `src/missions/washington/*.ts` is wrapped in `Verified<T>`, which 
 |---|---|---|
 | `verified` | Vérifié | Confirmed with the Embassy (**none yet**) |
 | `source-reported` | Publié par la représentation — à reconfirmer | Published on ambasenegal-us.org (screenshots, then live pages checked on 26 Oct 2026); each item links to its page |
-| `unverified` | Non vérifié | Written by Dalal Studio as a structure or placeholder; must be supplied by the Embassy |
+| `unverified` | Non vérifié | Written by Dalal Technologies as a structure or placeholder; must be supplied by the Embassy |
 | `fictional` | Fictif | Fictional demo missions only |
 
 ## Sources used
 
 | Source | Used for | Notes |
 |---|---|---|
-| Screenshots of https://www.ambasenegal-us.org/ supplied by Dalal Studio (26 Oct 2026) | First draft of all facts; years of the former ambassadors (only in images on the live page) | |
+| Screenshots of https://www.ambasenegal-us.org/ supplied by Dalal Technologies (26 Oct 2026) | First draft of all facts; years of the former ambassadors (only in images on the live page) | |
 | Live pages, checked 26 Oct 2026: home, `/juridiction/`, `/biographie-de-lambassadeur/`, `/anciens-ambassadeurs/` | Contact details, hours, Metro, jurisdiction, biography, names of former ambassadors, news dates | Confirmed the screenshot facts |
 | `/passeport/`, `/cartes-consulaires/`, `/etat-civil/`, `/demande-de-visa/`, `/inscription/` | Eligibility, documents, fees, processing, how to apply, forms for: passport, consular card, consular registration, birth, marriage, death, visa, entry requirements | Paraphrased; amounts copied exactly |
-| Article text supplied by Dalal Studio (the President's UN General Assembly speech on the Paris Agreement) | News summary | Paraphrased; no long quotations |
-| Event photos supplied by Dalal Studio (UNGA podium, Tripoli group photo, IMF meeting) | News and diplomacy band | Published by the Embassy. **Use approved for this demonstration** (confirmed by Dalal Studio, 26 Oct 2026); credited on screen |
-| Official portrait of the Ambassador, supplied by Dalal Studio (26 Oct 2026) | Home page, Embassy page, Ambassador's page | Supplied for this demonstration |
+| Article text supplied by Dalal Technologies (the President's UN General Assembly speech on the Paris Agreement) | News summary | Paraphrased; no long quotations |
+| Event photos supplied by Dalal Technologies (UNGA podium, Tripoli group photo, IMF meeting) | News and diplomacy band | Published by the Embassy. **Use approved for this demonstration** (confirmed by Dalal Technologies, 26 Oct 2026); credited on screen |
+| Official portrait of the Ambassador, supplied by Dalal Technologies (26 Oct 2026) | Home page, Embassy page, Ambassador's page | Supplied for this demonstration |
 | https://diplomatie.gouv.sn/ | Footer link to the Ministry | Link only |
 
-## Written by Dalal Studio (status `unverified`)
+## Written by Dalal Technologies (status `unverified`)
 
 These texts are clearly labelled on screen:
 
 - service descriptions for the seven services whose official page is missing or gives no detail;
 - the six bilateral theme texts;
 - the visit-preparation checklist, which is generic and contains no procedure-specific requirements;
-- the Ambassador's message, a paraphrased summary marked "Résumé rédigé par Dalal Studio";
+- the Ambassador's message, a paraphrased summary marked "Résumé rédigé par Dalal Technologies";
 - the privacy and accessibility pages (drafts);
 - FAQ wording, based only on the facts listed above.
 
