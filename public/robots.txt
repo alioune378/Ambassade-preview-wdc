@@ -1,4 +1,15 @@
-# Private demonstration. This is not access control: the preview is protected
-# by the edge function in netlify/edge-functions/preview-auth.ts.
+# Private demonstration: kept out of search engines.
+# Link-preview bots (WhatsApp, Facebook, LinkedIn, Slack, X, Telegram) are
+# allowed so a shared link shows a preview card. Search-engine indexing is
+# still blocked by this file and by the X-Robots-Tag: noindex header.
+User-agent: facebookexternalhit
+User-agent: WhatsApp
+User-agent: Facebot
+User-agent: LinkedInBot
+User-agent: Slackbot-LinkExpanding
+User-agent: Twitterbot
+User-agent: TelegramBot
+Allow: /
+
 User-agent: *
 Disallow: /
